@@ -141,4 +141,16 @@ body {
   padding: 10px;
 }
 
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social-icons i {
+  margin: 10px;
+}
+
 /* Media Query */

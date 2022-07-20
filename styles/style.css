@@ -7,7 +7,7 @@ body {
 /* Banner Section */
 
 .container {
-  width: 70%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -51,7 +51,8 @@ body {
 
 .blog-section {
   margin-top: 20px;
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr), 3fr;
 }
 
 .blog-sidebar {
@@ -66,9 +67,19 @@ body {
 
 .blog-sidebar a {
   text-decoration: none;
-  color: red;
+  color: hsla(0, 0%, 0%, 0.918);
   padding: 10px;
   text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#blog-sidebar-items-selected {
+  background-color: red;
+  color: white;
 }
 
 .blog-videos {
@@ -80,10 +91,26 @@ body {
 
 .blog-video {
   box-shadow: 5px 5px 5px 5px rgb(236, 241, 241);
+  margin-bottom: 10px;
+  transition: 0.2s all ease-in-out;
+}
+
+.blog-video:hover {
+  transform: scale(1.25, 1.25);
+  box-shadow: none;
+  background-color: white;
+  border-radius: 10px;
+  border: 0.5px solid wheat;
+  /* box-shadow: 5px 5px 5px 5px rgb(236, 241, 241);
+  margin-bottom: 10px; */
 }
 
 .blog-video-image {
   margin-bottom: 10px;
+}
+
+.blog-video-text {
+  margin-left: 10px;
 }
 
 .blog-video-text a {
@@ -92,15 +119,19 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
+  margin-left: 15px;
 }
 
 .icons {
   display: flex;
+  float: left;
   justify-content: space-around;
+  padding-bottom: 10px;
 }
 
 .blog-time,
 .blog-icon {
+  margin-left: 30px;
   display: flex;
   align-items: center;
 }

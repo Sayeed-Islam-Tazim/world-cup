@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+/* Banner Section */
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.banner-section {
+  background-color: hsla(0, 0%, 0%, 0.918);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  padding: 20px 20px 0 20px;
+}
+
+.banner-text {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.banner-text h1 {
+  font-size: 30px;
+}
+
+.banner-text small {
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.banner-text a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.baneer-image {
+  margin-left: 50px;
+}
+
+/* Blog Section */
+
+.blog-section {
+  margin-top: 20px;
+  display: flex;
+}
+
+.blog-sidebar {
+  background-color: hsla(0, 0%, 0%, 0.918);
+  border-radius: 10px;
+}
+
+.blog-sidebar-items {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.blog-sidebar a {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.blog-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  margin-left: 20px;
+}
+
+.blog-video {
+  box-shadow: 5px 5px 5px 5px rgb(236, 241, 241);
+}
+
+.blog-video-image {
+  margin-bottom: 10px;
+}
+
+.blog-video-text a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-time,
+.blog-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+
+.footer {
+  background-color: hsla(0, 0%, 0%, 0.918);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.line {
+  width: 80%;
+}
+
+.footer-items small {
+  padding: 10px;
+}
